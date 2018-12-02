@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+    <meta name="description" content="{dede:global.cfg_description/}"/>
+    <meta name="author" content="{dede:global.cfg_webname/}"/>
+    <meta name="copyright" content="{dede:global.cfg_webname/}"/>
+    <!--<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/{dede:global.cfg_templets_skin/}/static/js/protect.js"></script>-->
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/swiper.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/jpages.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/font.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/animate.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/static/css/main.css">
+</head>
+<body>
+<!--header-->
+{dede:include filename="head.htm"/}
+
+<div class="products_content ">
+    <!--banner-->
+    <div class="pro_content_banner">
+        <div class="pro_banner">
+            <img src="{dede:global.cfg_templets_skin/}/static/picture/banner.png" alt="">
+        </div>
+        <div class="pro_nav">
+            <div class="container">
+                <div class="pro_nav_title">
+                    <h2 class="en">COMPANY</h2>
+                    <!--<p class="name">{dede:field.title/}</p>-->
+                    <p class="name">{dede:field.typename/}</p>
+                </div>
+                <div class="pro_nav_tab">
+                    <!--<a href="javascript:;" class="active">企业简介</a>-->
+                    {dede:channel row='4' type ='son' currentstyle="<a href='~typelink~' class='active'>~typename~</a>"}
+                    <a href="[field:typelink/]">[field:typename/]</a>
+                    {/dede:channel}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--公司动态-->
+    <div class="company" style="min-height:auto;">
+        <div class="container">
+            <div class="company_yj">
+                <div class="company_yj_tit wow fadeInUp">
+                    <h2>CORPORATE EVENTS</h2>
+                    <P>{dede:field.typename/}</P>
+                </div>
+                <div class="company_j_dec wow fadeInUp" data-wow-delay="0.3s">
+                    <p>
+                        骨子里流动着电白人敢于改革、敢于拼搏、敢于开拓的精神，电白建设集团从未忘记迈出向前跨越的步履。海纳百川，谷涵万壑，百尺竿头，更进一步。如今的广东电白建设集团，以广东为依托，用实力、质量、品牌、诚信，将&ldquo;建筑之乡&rdquo;的光荣传统发扬光大，让遍布大江南北的琼楼玉宇、康庄大道、碧水绿林记住她湛蓝笃定的身姿。
+                    <p>
+                        <strong>1979（诞生）</strong></p>
+                    <p>
+                        1979年，电白建筑大业萌动发芽。而随着建筑行业的进一步发展，行业也慢慢呈现规范化、规模化的特点，在充满着各种可能性的时代，电白县林头建筑队应运而生。</p>
+                    <p>
+                        <strong>1986（雏形）</strong></p>
+                    <p>
+                        1986年3月，电白在几年间如雨后春笋般纷纷成立建筑队伍，这也象征着电白建筑行业进入了全面生长期。行业需要敢为人先者的探索与追寻，不仅是探索企业组织形式规范化与标准化，更是探索建筑行业的梦想能有多大。电白县林头建筑工程公司此时正式成立。</p>
+                    <p>
+                        <strong>2003（启航）</strong></p>
+                    <p>
+                        2003年6月, 电白县林头建筑工程公司更名为电白县建设工程公司，带着一路未曾改变的理想主义情怀，纵横驰骋，疆域遍及珠三角。</p>
+                    <p>
+                        <strong>2008（战略）</strong></p>
+                    <p>
+                        2008年4月,行者无疆拓蓝海。2008年初，传承电白建筑之乡敢于改革、善于改革的优良传统，新一代年轻朝气的领导班子大胆实施改制重组更名，公司成为充满活力的股份制企业，秉承&ldquo;立足广东，布局全国，放眼世界&rdquo;的战略方针，迅猛发展。</p>
+                    <p>
+                        <strong>2010（飞跃）</strong></p>
+                    <p>
+                        资质大飞跃：同年晋升房屋建筑工程施工总承包壹级、市政公用工程施工总承包壹级、地基与基础工程专业承包壹级、机电设备安装工程专业承包壹级。</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--底部-->
+{dede:include filename="footer.htm"/}
+</body>
+</html>
+<script src="{dede:global.cfg_templets_skin/}/static/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/wow.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/swiper.jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/static/js/common.js"></script>
